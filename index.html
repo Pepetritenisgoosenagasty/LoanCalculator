@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-dark">
+    
+      
+      <main role="main" class="container">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <div class="card card-body text-center mt-5">
+                 <h1 class="heading display-5 pb-3">Loan Calculator</h1>
+                 <form id="loan-form">
+                     <div class="form-group">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon">$</span> 
+                            </div>
+                            <input type="number" class="form-control" id="amount" placeholder="Loan Amount" aria-describedby="basic-addon" araia-label="amount">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon">%</span> 
+                            </div>
+                            <input type="number" class="form-control" id="interest" placeholder="interest" aria-describedby="basic-addon" araia-label="interest">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                         <input type="text" class="form-control" id="years" placeholder="Years to pay">
+                     </div>
+                     <div class="form-group">
+                       <input type="submit" value="Calculate" class="btn btn-dark btn-block">
+                    </div>
+                 </form>
+                 <!-- Loader -->
+                 <div id="loader">
+                     <img src="img/loading.gif" alt="" style="width:200px; height:200px; opacity:1;">
+                 </div>
+                 <!-- result -->
+                 <div id="results" class="pt-4">
+                     <h5 class="text-info">Results</h5>
+                    <div class="form-group">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon">Monthly Payment</span> 
+                            </div>
+                            <input type="number" class="form-control" id="monthly-payment"  aria-describedby="basic-addon" araia-label="amount" disabled>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon">Total Payment</span> 
+                                </div>
+                                <input type="number" class="form-control" id="total-payment"  aria-describedby="basic-addon" araia-label="amount" disabled>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon">Total Interest</span> 
+                                    </div>
+                                    <input type="number" class="form-control" id="total-interest"  aria-describedby="basic-addon" araia-label="amount" disabled>
+                                </div>
+                             </div>
+                 </div>
+                </div>    
+            </div>
+        </div>
+      </main><!-- /.container -->
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
